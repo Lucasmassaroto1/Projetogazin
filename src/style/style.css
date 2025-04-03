@@ -1,4 +1,3 @@
-/* GERAL */
 :root{
   --color-primary: #00CA76;
   --color-secundary: #01916D;
@@ -11,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Exo 2", sans-serif;
+  user-select: none;
 }
 body{
   background: var(--color-hoverbtn);
@@ -42,103 +42,6 @@ h2.titulo{
 }
 h2.titulo span{
   color: var(--color-primary);
-}
-/* HEADER */
-.menu-lateral{
-  position: fixed;
-  left: -300px;
-  top: 0;
-  width: 300px;
-  height: 100%;
-  background-color: var(--color-menu);
-  border-radius: 0px 20px 20px 0px;
-  z-index: 3;
-  transition: left 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.menu-lateral ul{
-  list-style: none;
-  padding: 0;
-  margin-top: 60px;
-}
-.menu-lateral ul li{
-  padding: 15px 30px;
-}
-.menu-lateral ul li a{
-  color:var(--color-txt);
-  text-decoration: none;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: transform 0.3s ease;
-}
-.menu-lateral ul li a span{
-  text-decoration: none;
-}
-.menu-lateral ul li a i{
-  font-size: 24px;
-}
-.toggle{
-  background-color:var(--color-primary);
-  color:var(--color-txt);
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  z-index: 3;
-  border-radius: 5px;
-  font-size: 24px;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: left 0.5s ease;
-}
-.conteudo{
-  width: 100%;
-  transition: margin-left 0.5s ease;
-}
-.background{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  z-index: 2;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-.menu-lateral ul li a:hover{
-  transition: text-decoration 0.3s ease;
-}
-.menu-lateral ul li a:hover span{
-  text-decoration: underline;
-}
-.menu-lateral ul li:hover{
-  background: var(--color-secundary);
-}
-.menu-lateral ul li:hover a{
-  transform: translateX(5px);
-}
-.menu-lateral ul li a i:hover{
-  transform: translateX(5px) rotate(5deg);
-}
-.toggle:hover{
-  background-color: var(--color-secundary);
-}
-.menu-lateral.ativo{
-  left: 0;
-}
-.toggle.ativo{
-  left: 320px;
-}
-.conteudo.ativo{
-  margin-left: 0;
-}
-.background.ativo{
-  opacity: 1;
-  visibility: visible;
-  backdrop-filter: blur(5px);
 }
 /* SECTION INICIO */
 section.inicio .flex{
@@ -216,6 +119,9 @@ section.sobre .flex{
 .sobre .txt-sobre{
   color: var(--color-txt);
   max-width: 800px;
+  text-indent: 14px;
+  margin: 0 auto;
+  
 }
 .sobre .txt-sobre h2{
   font-size: 40px;
@@ -253,7 +159,7 @@ section.comando{
 }
 .card{
   width: 190px;
-  background: white;
+  background: var(--color-menu);
   padding: .4em;
   border-radius: 6px;
   display: flex;
@@ -262,7 +168,7 @@ section.comando{
   height: 100%;
 }
 .card-image img{
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(119, 116, 116);
   width: 100%;
   height: 130px;
   border-radius: 6px 6px 0 0;
@@ -274,22 +180,16 @@ section.comando{
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 600;
-  color: rgb(63, 121, 230);
+  color: var(--color-primary);
   padding: 10px 7px 0;
-}
-.category:hover{
-  cursor: pointer;
 }
 .heading{
   font-weight: 600;
-  color: rgb(88, 87, 87);
+  color: var(--color-txt);
   padding: 7px;
 }
-.heading:hover{
-  cursor: pointer;
-}
 .author{
-  color: gray;
+  color: rgb(150, 150, 150);
   font-weight: 400;
   font-size: 11px;
   padding-top: 20px;
@@ -367,15 +267,6 @@ footer .line-footer p a{
   .flex{
     flex-direction: column;
   }
-  .conteudo{
-    margin-left: 0 !important;
-  }
-  .menu-lateral{
-    width: 220px;
-  }
-  .toggle.ativo{
-    left: 240px;
-  }
   section.inicio{
     padding: 80px 4%;
   }
@@ -403,9 +294,6 @@ footer .line-footer p a{
 @media screen and (max-width: 991px){
   .flex{
     flex-direction: column;
-  }
-  .conteudo{
-    margin-left: 0 !important;
   }
   section.inicio .flex{
     gap: 40px;
