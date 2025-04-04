@@ -1,6 +1,6 @@
 :root{
   --color-primary: #00CA76;
-  --color-secundary: #01916D;
+  --color-secondary: #01916D;
   --color-txt: #FFFFFF;
   --color-menu: #353333;
   --color-hoverbtn: #000000;
@@ -23,7 +23,7 @@ body::-webkit-scrollbar-track{
   border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb{
-  background: var(--color-secundary);
+  background: var(--color-secondary);
   border-radius: 10px;
 }
 section{
@@ -175,6 +175,7 @@ section.comando{
 }
 .card-image:hover{
   transform: scale(0.98);
+  transition: transform 0.3s ease;
 }
 .category{
   text-transform: uppercase;
@@ -295,18 +296,6 @@ footer .line-footer p a{
   .flex{
     flex-direction: column;
   }
-  section.inicio .flex{
-    gap: 40px;
-  }
-  .txt-inicio h1{
-    font-size: 40px;
-  }
-  .img-inicio img{
-    width: 100%;
-  }
-  section.sobre{
-    padding: 80px 4%;
-  }
   .comando{
     grid-template-columns: repeat(2, auto);
   }
@@ -316,7 +305,7 @@ footer .line-footer p a{
 /* 
 :root{
   --color-primary: #00CA76;
-  --color-secundary: #01916D;
+  --color-secondary: #01916D;
   --color-txt: #FFFFFF;
   --color-menu: #353333;
   --color-hoverbtn: #000000;
@@ -338,7 +327,7 @@ body::-webkit-scrollbar-track{
   border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb{
-  background: var(--color-secundary);
+  background: var(--color-secondary);
   border-radius: 10px;
 }
 section{
@@ -358,7 +347,6 @@ h2.titulo{
 h2.titulo span{
   color: var(--color-primary);
 }
-
 .menu-lateral{
   position: fixed;
   left: -300px;
@@ -455,7 +443,6 @@ h2.titulo span{
   visibility: visible;
   backdrop-filter: blur(5px);
 }
-
 section.inicio .flex{
   align-items: center;
   justify-content: center;
@@ -520,7 +507,6 @@ section.inicio .flex{
 .btn-adiciona button:active{
   filter: brightness(.8);
 }
-
 section.sobre{
   padding: 80px 4%;
 }
@@ -555,8 +541,6 @@ section.sobre .flex{
 .sobre .txt-sobre p a:hover{
   text-decoration: underline;
 }
-
-
 section.comando{
   padding: 80px 4%;
 }
@@ -581,6 +565,7 @@ section.comando{
 }
 .card-image:hover{
   transform: scale(0.98);
+  transition: transform 0.3s ease;
 }
 .category{
   text-transform: uppercase;
@@ -612,7 +597,7 @@ section.comando{
 .name:hover{
   cursor: pointer;
 }
- .card-contianer{
+.card-contianer{
   perspective: 1000px;
 }
 .card{
@@ -677,15 +662,6 @@ footer .line-footer p a{
   .flex{
     flex-direction: column;
   }
-  .conteudo{
-    margin-left: 0 !important;
-  }
-  .menu-lateral{
-    width: 220px;
-  }
-  .toggle.ativo{
-    left: 240px;
-  }
   section.inicio{
     padding: 80px 4%;
   }
@@ -713,21 +689,6 @@ footer .line-footer p a{
 @media screen and (max-width: 991px){
   .flex{
     flex-direction: column;
-  }
-  .conteudo{
-    margin-left: 0 !important;
-  }
-  section.inicio .flex{
-    gap: 40px;
-  }
-  .txt-inicio h1{
-    font-size: 40px;
-  }
-  .img-inicio img{
-    width: 100%;
-  }
-  section.sobre{
-    padding: 80px 4%;
   }
   .comando{
     grid-template-columns: repeat(2, auto);
