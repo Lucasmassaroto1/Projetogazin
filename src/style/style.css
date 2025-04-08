@@ -188,6 +188,9 @@ section{
   font-size: 14px;
   line-height: 1.5;
 }
+.list-commands li{
+  list-style: none;
+}
 .author{
   padding: 0 15px 15px;
   font-size: 12px;
