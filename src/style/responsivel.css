@@ -1,14 +1,14 @@
 /* ========== RESPONSIVO ========== */
-@media (max-width: 768px){
+@media (max-width: 48rem){
     .inicio .txt-inicio h1{
-        font-size: 36px;
+        font-size: 2.25rem; /*36px*/
     }
     .inicio .txt-inicio h1 span{
-        font-size: 24px;
+        font-size: 1.5rem; /*24px*/
     }
     .sobre .txt-sobre{
-        font-size: 18px;
-        text-indent: 10px;
+        font-size: 1.125rem; /*18px*/
+        text-indent: 0.625rem; /*10px*/
     }
     .comando{
         grid-template-columns: 1fr;
