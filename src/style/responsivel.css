@@ -1,5 +1,5 @@
 /* ========== RESPONSIVO ========== */
-@media (max-width: 48rem){
+@media screen and (max-width: 48rem){
     .inicio .txt-inicio h1{
         font-size: 2.25rem; /*36px*/
     }
