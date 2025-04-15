@@ -19,6 +19,7 @@ body{
   background: var(--color-bg);
   color: var(--color-txt);
 }
+/* ========== PERSONALIZA A BARRA DE ROLAGEM ========== */
 body::-webkit-scrollbar{
   width: 8px;
 }
