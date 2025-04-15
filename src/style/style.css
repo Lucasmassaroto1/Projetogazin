@@ -31,15 +31,15 @@ body::-webkit-scrollbar-thumb{
   border-radius: 10px;
 }
 main{
-  padding: 60px 20px;
+  padding: 3.75rem 1.25rem; /* 60px 20px */
 }
 h1, h2{
   font-weight: 700;
 }
 h2.titulo{
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px */
 }
 h2.titulo span{
   color: var(--color-primary);
@@ -49,17 +49,17 @@ h2.titulo span{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2.5rem; /* 40px */
 }
 section{
-  margin-bottom: 80px;
+  margin-bottom: 5rem; /* 80px */
   width: 100%;
 }
 .btn-global{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 0.625rem; /* 10px */
+  margin-top: 1.25rem; /* 20px */
 }
 .btn-global button{
   color: var(--color-primary);
@@ -71,15 +71,15 @@ section{
   cursor: pointer;
   transition: .5s;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
   border: 1px solid;
   z-index: 1;
 }
 .btn-global button::before, .btn-global button::after{
   content: '';
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem; /* 50px */
+  height: 3.125rem; /* 50px */
   transform: translate(-50%, -50%);
   position: absolute;
   border-radius: 50%;
@@ -96,8 +96,8 @@ section{
   top: calc(100% + 1rem);
 }
 .btn-global button:hover::before, .btn-global button:hover::after{
-  width: 410px;
-  height: 410px;
+  width: 25.625rem; /* 410px */
+  height: 25.625rem; /* 410px */
 }
 .btn-global button:hover{
   color: var(--color-bg);
@@ -112,30 +112,30 @@ section{
 /* ========== INÍCIO ========== */
 .inicio .img-inicio img{
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem; /* 400px */
 }
 .inicio .txt-inicio h1{
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 3rem; /* 48px */
+  margin-bottom: 1.25rem; /* 20px */
   line-height: 1.2;
 }
 .inicio .txt-inicio h1 span{
   display: block;
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
   color: var(--color-primary);
 }
 
 /* ========== SOBRE ========== */
 .sobre .txt-sobre{
-  max-width: 800px;
-  text-indent: 20px;
+  max-width: 50rem; /* 800px */
+  text-indent: 1.25rem; /* 20px */
   text-align: justify;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   line-height: 1.6;
-  padding: 0 15px;
+  padding: 0 0.9375rem; /* 15px */
 }
 .sobre .txt-sobre h2{
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px */
 }
 .sobre .txt-sobre h2 span{
   display: block;
@@ -153,13 +153,13 @@ section{
 /* ========== COMANDOS ========== */
 .comando{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
+  gap: 1.25rem; /* 20px */
   width: 100%;
 }
 .card{
   background: var(--color-card-bg);
-  border-radius: 8px;
+  border-radius: 0.5rem; /* 8px */
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -174,25 +174,25 @@ section{
   background-color: #777;
 }
 .category{
-  font-size: 12px;
+  font-size: 0.75rem; /* 12px */
   font-weight: 600;
   text-transform: uppercase;
   color: var(--color-primary);
-  padding: 10px 15px 0;
+  padding: 0.625rem 0.9375rem 0; /* 10px 15px 0 */
 }
 .heading{
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem; /* 10px 15px */
   font-weight: 600;
   color: var(--color-txt);
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   line-height: 1.5;
 }
 .list-commands li{
   list-style: none;
 }
 .author{
-  padding: 0 15px 15px;
-  font-size: 12px;
+  padding: 0 0.9375rem 0.9375rem; /* 0 15px 15px */
+  font-size: 0.75rem; /* 12px */
   color: #aaa;
 }
 .author .name{
@@ -203,15 +203,15 @@ section{
 #criador{
   background-color: #0f0f0f;
   color: var(--color-txt);
-  padding: 60px 20px;
+  padding: 3.75rem 1.25rem; /* 60px 20px */
 }
 .criador-container{
-  max-width: 1000px;
+  max-width: 62.5rem; /* 1000px */
   margin: 0 auto;
 }
 .criador-container h2{
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem; /* 30px */
   text-align: center;
   color: var(--color-primary);
 }
@@ -219,16 +219,16 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem; /* 20px */
 }
 .perfil img{
-  width: 120px;
-  height: 120px;
+  width: 7.5rem; /* 120px */
+  height: 7.5rem; /* 120px */
   border-radius: 50%;
   border: 3px solid var(--color-primary);
 }
 .texto{
-  max-width: 600px;
+  max-width: 37.5rem; /* 600px */
   text-align: center;
 }
 .texto h3{
@@ -238,17 +238,17 @@ section{
 }
 .texto p{
   font-size: 1rem;
-  line-height: 1.6;
+  margin-bottom: 0.625rem; /* 10px */
 }
 
 /* ========== FOOTER ========== */
 footer{
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem; /* 40px 20px */
   text-align: center;
   color: var(--color-txt);
 }
 footer .line-footer{
-  padding: 10px 0;
+  padding: 0.625rem 0; /* 10px 0 */
 }
 .borda{
   border-top: 2px solid var(--color-primary);
