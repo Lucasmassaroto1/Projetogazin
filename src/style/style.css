@@ -127,6 +127,8 @@ section:nth-child(4){
 .inicio .img-inicio img{
   width: 100%;
   max-width: 25rem; /* 400px */
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
 }
 .inicio .txt-inicio h1{
   font-size: 3rem; /* 48px */
@@ -329,5 +331,13 @@ footer a:hover{
   }
   100%{
     background-position: 200%;
+  }
+}
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
   }
 }
