@@ -281,6 +281,24 @@ footer a:hover{
 .fade-in{
   animation: fadeInSlide 1s ease-out forwards;
 }
+.slide-right{
+  animation: slideRight 1s ease-out forwards;
+}
+.glow-effect{
+  position: relative;
+  overflow: hidden;
+}
+.glow-effect::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent, var(--color-primary), transparent);
+  transform: rotate(25deg);
+  animation: shimmer 2.5s forwards;
+}
 section:nth-child(2){
   animation-delay: 0.4s;
 }
@@ -341,5 +359,23 @@ section:nth-child(4){
   }
   100%{
     top: 30px;
+  }
+}
+@keyframes slideRight{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes shimmer{
+  0%{
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100%{
+    transform: translateX(100%) rotate(25deg);
   }
 }
