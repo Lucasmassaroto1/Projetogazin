@@ -60,15 +60,6 @@ section{
   animation: fadeInSlide 1s ease-out forwards;
   animation-delay: 0.2s;
 }
-section:nth-child(2){
-  animation-delay: 0.4s;
-}
-section:nth-child(3){
-  animation-delay: 0.6s;
-}
-section:nth-child(4){
-  animation-delay: 0.8s;
-}
 .btn-global{
   display: flex;
   flex-wrap: wrap;
@@ -193,21 +184,6 @@ section:nth-child(4){
 .card:hover{
   transform: scale(1.02);
 }
-.card:nth-child(2){
-  animation-delay: 0.5s;
-}
-.card:nth-child(3){
-  animation-delay: 0.7s;
-}
-.card:nth-child(4){
-  animation-delay: 0.9s;
-}
-.card:nth-child(5){
-  animation-delay: 1.1s;
-}
-.card:nth-child(6){
-  animation-delay: 1.3s;
-}
 .card-image img{
   width: 100%;
   height: 140px;
@@ -305,6 +281,31 @@ footer a:hover{
 .fade-in{
   animation: fadeInSlide 1s ease-out forwards;
 }
+section:nth-child(2){
+  animation-delay: 0.4s;
+}
+section:nth-child(3){
+  animation-delay: 0.6s;
+}
+section:nth-child(4){
+  animation-delay: 0.8s;
+}
+.card:nth-child(2){
+  animation-delay: 0.5s;
+}
+.card:nth-child(3){
+  animation-delay: 0.7s;
+}
+.card:nth-child(4){
+  animation-delay: 0.9s;
+}
+.card:nth-child(5){
+  animation-delay: 1.1s;
+}
+.card:nth-child(6){
+  animation-delay: 1.3s;
+}
+/* ========== ANIMAÇÂO KEYFRAMES ========== */
 @keyframes fadeInSlide{
   0%{
     opacity: 0;
