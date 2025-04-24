@@ -14,6 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Exo 2", sans-serif;
+  -webkit-user-drag: none;
 }
 body{
   background: var(--color-bg);
